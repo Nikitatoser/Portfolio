@@ -1,0 +1,131 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="{% static "main/css/main.css" %}">
+</head>
+<body>
+  <div class="col">
+    <!-- Top Section -->
+    <section class="top">
+      <div class="first_left">
+        <h1 class="myname">Your Name</h1>
+        <p class="ttext">Software Engineer | Full-Stack Developer</p>
+        <div class="hreff">
+          <a class="linkq" href="#about">About</a>
+          <a class="linkq" href="#projects">Projects</a>
+          <a class="linkq" href="#contact">Contact</a>
+        </div>
+        <div class="language">
+          <a class="link" href="#">EN</a>
+          <a class="link" href="#">UA</a>
+        </div>
+      </div>
+      <div class="first_right">
+        <img class="myfoto" src="{% static "main\img\photo_2024-10-06_19-39-28.jpg" %}" alt="Your Photo">
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about_info">
+        <div class="about_left">
+          <div class="content_info">
+            <div class="leftl">
+              <h2 class="ab_title">About Me</h2>
+              <p class="myinfo">
+                Brief introduction about yourself. Highlight your expertise, experience, and what you enjoy working on.
+              </p>
+            </div>
+            <div class="leftr">
+              <img class="ab_foto" src="about-photo.jpg" alt="About Image">
+            </div>
+          </div>
+        </div>
+        <div class="about_right">
+          <h3 class="list_tittle">Skills</h3>
+          <p class="list_eit">JavaScript, Python, React, Node.js</p>
+          <p class="list_eit">Docker, Git, AWS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="art_title">My Projects</h2>
+
+      <!-- Mobile Development Section -->
+      <div class="project-category">
+        <h3 class="project-category-title">Mobile Development</h3>
+        <div class="project-list">
+          <div class="project-item">
+            <h4>Mobile App 1</h4>
+            <p>Description of Mobile App 1.</p>
+          </div>
+          <div class="project-item">
+            <h4>Mobile App 2</h4>
+            <p>Description of Mobile App 2.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development Section -->
+      <div class="project-category">
+        <h3 class="project-category-title">Web Development</h3>
+        <div class="project-list">
+          <div class="project-item">
+            <h4>Web Project 1</h4>
+            <p>Description of Web Project 1.</p>
+          </div>
+          <div class="project-item">
+            <h4>Web Project 2</h4>
+            <p>Description of Web Project 2.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Section -->
+      <div class="project-category">
+        <h3 class="project-category-title">Other Projects</h3>
+        <div class="project-list">
+          <div class="project-item">
+            <h4>Other Project 1</h4>
+            <p>Description of Other Project 1.</p>
+          </div>
+          <div class="project-item">
+            <h4>Other Project 2</h4>
+            <p>Description of Other Project 2.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="con_title">Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p>your.email@example.com</p>
+        </div>
+        <div class="contact-info">
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/yourprofile</p>
+        </div>
+        <div class="contact-info">
+          <h3>GitHub</h3>
+          <p>github.com/yourusername</p>
+        </div>
+        <div class="contact-info">
+          <h3>Phone</h3>
+          <p>+123 456 7890</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
